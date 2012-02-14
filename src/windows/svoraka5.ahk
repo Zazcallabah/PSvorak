@@ -1,7 +1,4 @@
-; <COMPILER: v1.0.23.0>
-
-
-
+ï»¿; <COMPILER: v1.0.23.0>
 
 #singleinstance force
 #persistent
@@ -23,7 +20,7 @@ if inputlocale <> 0000041d
 {
    suspend
    regread, inputlocale, HKEY_LOCAL_MACHINE, SYSTEM\CurrentControlSet\Control\Keyboard Layouts\%inputlocale%, Layout Text
-   msgbox, 48, Varning!, Inkompatibel tangentbordslayout:   `n`n      "%inputlocale%"   `n`nSvensk QWERTY måste vara standardlayout för   `natt %name% ska fungera som förväntat.   `n`nÄndra standardlayoten under Kontrollpanelen   `n-> Nationella inställningar och språkinställningar   `n-> Språk -> Information...   `n
+   msgbox, 48, Varning!, Inkompatibel tangentbordslayout:   `n`n      "%inputlocale%"   `n`nSvensk QWERTY mÃ¥ste vara standardlayout fÃ¶r   `natt %name% ska fungera som fÃ¶rvÃ¤ntat.   `n`nÃ„ndra standardlayoten under Kontrollpanelen   `n-> Nationella instÃ¤llningar och sprÃ¥kinstÃ¤llningar   `n-> SprÃ¥k -> Information...   `n
    exitapp
 }
 
@@ -40,13 +37,13 @@ if firstrun <> off
 menu, tray, add, %disable%, togglesvorak
 menu, tray, default, %disable%
 menu, tray, add, %ctrls%, togglectrl
-   menu, helpmenu, add, &Hjälp, help
+   menu, helpmenu, add, &HjÃ¤lp, help
    menu, helpmenu, add
    menu, helpmenu, add, http://aoeu.&info/, aoeu
    menu, helpmenu, add, http://&autohotkey.com/, autohotkey
 menu, tray, add, &Dokumentation, :helpmenu
 menu, tray, add
-menu, tray, add, Dölj &aktivitetsikonen, hide
+menu, tray, add, DÃ¶lj &aktivitetsikonen, hide
 menu, tray, add, &Avsluta %name%, exitprogram
 menu, tray, tip, %name%
 
@@ -55,9 +52,14 @@ gosub, setctrl
 menu, tray, icon
 blockinput, send
 
-q = å
-w = ä
-e = ö
+
+
+
+
+
+q = Ã¶
+w = Ã¥
+e = Ã¤
 r = p
 t = y
 y = f
@@ -65,7 +67,7 @@ u = g
 i = c
 o = r
 p = l
-å = `,
+Ã¥ = `,
 
 s = o
 d = e
@@ -75,8 +77,8 @@ h = d
 j = h
 k = t
 l = n
-ö = s
-ä = -
+Ã¶ = s
+Ã¤ = -
 
 z = .
 x = q
@@ -101,7 +103,7 @@ u::send %u%
 i::send %i%
 o::send %o%
 p::send %p%
-å::send %å%
+Ã¥::send %Ã¥%
 
 s::send %s%
 d::send %d%
@@ -111,8 +113,8 @@ h::send %h%
 j::send %j%
 k::send %k%
 l::send %l%
-ö::send %ö%
-ä::send %ä%
+Ã¶::send %Ã¶%
+Ã¤::send %Ã¤%
 
 z::send %z%
 x::send %x%
@@ -135,7 +137,7 @@ n::send %n%
 +i::send +%i%
 +o::send +%o%
 +p::send +%p%
-+å::send +%å%
++Ã¥::send +%Ã¥%
 
 +s::send +%s%
 +d::send +%d%
@@ -145,8 +147,8 @@ n::send %n%
 +j::send +%j%
 +k::send +%k%
 +l::send +%l%
-+ö::send +%ö%
-+ä::send +%ä%
++Ã¶::send +%Ã¶%
++Ã¤::send +%Ã¤%
 
 +z::send +%z%
 +x::send +%x%
@@ -169,7 +171,7 @@ n::send %n%
 ^i::send ^%i%
 ^o::send ^%o%
 ^p::send ^%p%
-^å::send ^%å%
+^Ã¥::send ^%Ã¥%
 
 ^s::send ^%s%
 ^d::send ^%d%
@@ -179,8 +181,8 @@ n::send %n%
 ^j::send ^%j%
 ^k::send ^%k%
 ^l::send ^%l%
-^ö::send ^%ö%
-^ä::send ^%ä%
+^Ã¶::send ^%Ã¶%
+^Ã¤::send ^%Ã¤%
 
 ^z::send ^%z%
 ^x::send ^%x%
@@ -203,7 +205,7 @@ n::send %n%
 !i::send {altdown}%i%
 !o::send {altdown}%o%
 !p::send {altdown}%p%
-!å::send {altdown}%å%
+!Ã¥::send {altdown}%Ã¥%
 
 !s::send {altdown}%s%
 !d::send {altdown}%d%
@@ -213,8 +215,8 @@ n::send %n%
 !j::send {altdown}%j%
 !k::send {altdown}%k%
 !l::send {altdown}%l%
-!ö::send {altdown}%ö%
-!ä::send {altdown}%ä%
+!Ã¶::send {altdown}%Ã¶%
+!Ã¤::send {altdown}%Ã¤%
 
 !z::send {altdown}%z%
 !x::send {altdown}%x%
@@ -237,7 +239,7 @@ n::send %n%
 #i::send #%i%
 #o::send #%o%
 #p::send #%p%
-#å::send #%å%
+#Ã¥::send #%Ã¥%
 
 #s::send #%s%
 #d::send #%d%
@@ -247,8 +249,8 @@ n::send %n%
 #j::send #%j%
 #k::send #%k%
 #l::send #%l%
-#ö::send #%ö%
-#ä::send #%ä%
+#Ã¶::send #%Ã¶%
+#Ã¤::send #%Ã¤%
 
 #z::send #%z%
 #x::send #%x%
@@ -271,7 +273,7 @@ n::send %n%
 ^+i::send ^+%i%
 ^+o::send ^+%o%
 ^+p::send ^+%p%
-^+å::send ^+%å%
+^+Ã¥::send ^+%Ã¥%
 
 ^+s::send ^+%s%
 ^+d::send ^+%d%
@@ -281,8 +283,8 @@ n::send %n%
 ^+j::send ^+%j%
 ^+k::send ^+%k%
 ^+l::send ^+%l%
-^+ö::send ^+%ö%
-^+ä::send ^+%ä%
+^+Ã¶::send ^+%Ã¶%
+^+Ã¤::send ^+%Ã¤%
 
 ^+z::send ^+%z%
 ^+x::send ^+%x%
@@ -305,7 +307,7 @@ n::send %n%
 <!+i::send !+%i%
 <!+o::send !+%o%
 <!+p::send !+%p%
-<!+å::send !+%å%
+<!+Ã¥::send !+%Ã¥%
 
 <!+s::send !+%s%
 <!+d::send !+%d%
@@ -315,8 +317,8 @@ n::send %n%
 <!+j::send !+%j%
 <!+k::send !+%k%
 <!+l::send !+%l%
-<!+ö::send !+%ö%
-<!+ä::send !+%ä%
+<!+Ã¶::send !+%Ã¶%
+<!+Ã¤::send !+%Ã¤%
 
 <!+z::send !+%z%
 <!+x::send !+%x%
@@ -339,7 +341,7 @@ n::send %n%
 #+i::send #+%i%
 #+o::send #+%o%
 #+p::send #+%p%
-#+å::send #+%å%
+#+Ã¥::send #+%Ã¥%
 
 #+s::send #+%s%
 #+d::send #+%d%
@@ -349,8 +351,8 @@ n::send %n%
 #+j::send #+%j%
 #+k::send #+%k%
 #+l::send #+%l%
-#+ö::send #+%ö%
-#+ä::send #+%ä%
+#+Ã¶::send #+%Ã¶%
+#+Ã¤::send #+%Ã¤%
 
 #+z::send #+%z%
 #+x::send #+%x%
@@ -373,7 +375,7 @@ n::send %n%
 ^<!i::send ^!%i%
 ^<!o::send ^!%o%
 ^<!p::send ^!%p%
-^<!å::send ^!%å%
+^<!Ã¥::send ^!%Ã¥%
 
 ^<!s::send ^!%s%
 ^<!d::send ^!%d%
@@ -383,8 +385,8 @@ n::send %n%
 ^<!j::send ^!%j%
 ^<!k::send ^!%k%
 ^<!l::send ^!%l%
-^<!ö::send ^!%ö%
-^<!ä::send ^!%ä%
+^<!Ã¶::send ^!%Ã¶%
+^<!Ã¤::send ^!%Ã¤%
 
 ^<!z::send ^!%z%
 ^<!x::send ^!%x%
@@ -407,7 +409,7 @@ n::send %n%
 ^#i::send ^#%i%
 ^#o::send ^#%o%
 ^#p::send ^#%p%
-^#å::send ^#%å%
+^#Ã¥::send ^#%Ã¥%
 
 ^#s::send ^#%s%
 ^#d::send ^#%d%
@@ -417,8 +419,8 @@ n::send %n%
 ^#j::send ^#%j%
 ^#k::send ^#%k%
 ^#l::send ^#%l%
-^#ö::send ^#%ö%
-^#ä::send ^#%ä%
+^#Ã¶::send ^#%Ã¶%
+^#Ã¤::send ^#%Ã¤%
 
 ^#z::send ^#%z%
 ^#x::send ^#%x%
@@ -441,7 +443,7 @@ n::send %n%
 <!#i::send !#%i%
 <!#o::send !#%o%
 <!#p::send !#%p%
-<!#å::send !#%å%
+<!#Ã¥::send !#%Ã¥%
 
 <!#s::send !#%s%
 <!#d::send !#%d%
@@ -451,8 +453,8 @@ n::send %n%
 <!#j::send !#%j%
 <!#k::send !#%k%
 <!#l::send !#%l%
-<!#ö::send !#%ö%
-<!#ä::send !#%ä%
+<!#Ã¶::send !#%Ã¶%
+<!#Ã¤::send !#%Ã¤%
 
 <!#z::send !#%z%
 <!#x::send !#%x%
@@ -475,7 +477,7 @@ n::send %n%
 ^<!+i::send ^!+%i%
 ^<!+o::send ^!+%o%
 ^<!+p::send ^!+%p%
-^<!+å::send ^!+%å%
+^<!+Ã¥::send ^!+%Ã¥%
 
 ^<!+s::send ^!+%s%
 ^<!+d::send ^!+%d%
@@ -485,8 +487,8 @@ n::send %n%
 ^<!+j::send ^!+%j%
 ^<!+k::send ^!+%k%
 ^<!+l::send ^!+%l%
-^<!+ö::send ^!+%ö%
-^<!+ä::send ^!+%ä%
+^<!+Ã¶::send ^!+%Ã¶%
+^<!+Ã¤::send ^!+%Ã¤%
 
 ^<!+z::send ^!+%z%
 ^<!+x::send ^!+%x%
@@ -509,7 +511,7 @@ n::send %n%
 ^<!#i::send ^!#%i%
 ^<!#o::send ^!#%o%
 ^<!#p::send ^!#%p%
-^<!#å::send ^!#%å%
+^<!#Ã¥::send ^!#%Ã¥%
 
 ^<!#s::send ^!#%s%
 ^<!#d::send ^!#%d%
@@ -519,8 +521,8 @@ n::send %n%
 ^<!#j::send ^!#%j%
 ^<!#k::send ^!#%k%
 ^<!#l::send ^!#%l%
-^<!#ö::send ^!#%ö%
-^<!#ä::send ^!#%ä%
+^<!#Ã¶::send ^!#%Ã¶%
+^<!#Ã¤::send ^!#%Ã¤%
 
 ^<!#z::send ^!#%z%
 ^<!#x::send ^!#%x%
@@ -543,7 +545,7 @@ n::send %n%
 ^#+i::send ^#+%i%
 ^#+o::send ^#+%o%
 ^#+p::send ^#+%p%
-^#+å::send ^#+%å%
+^#+Ã¥::send ^#+%Ã¥%
 
 ^#+s::send ^#+%s%
 ^#+d::send ^#+%d%
@@ -553,8 +555,8 @@ n::send %n%
 ^#+j::send ^#+%j%
 ^#+k::send ^#+%k%
 ^#+l::send ^#+%l%
-^#+ö::send ^#+%ö%
-^#+ä::send ^#+%ä%
+^#+Ã¶::send ^#+%Ã¶%
+^#+Ã¤::send ^#+%Ã¤%
 
 ^#+z::send ^#+%z%
 ^#+x::send ^#+%x%
@@ -577,7 +579,7 @@ n::send %n%
 <!#+i::send !#+%i%
 <!#+o::send !#+%o%
 <!#+p::send !#+%p%
-<!#+å::send !#+%å%
+<!#+Ã¥::send !#+%Ã¥%
 
 <!#+s::send !#+%s%
 <!#+d::send !#+%d%
@@ -587,8 +589,8 @@ n::send %n%
 <!#+j::send !#+%j%
 <!#+k::send !#+%k%
 <!#+l::send !#+%l%
-<!#+ö::send !#+%ö%
-<!#+ä::send !#+%ä%
+<!#+Ã¶::send !#+%Ã¶%
+<!#+Ã¤::send !#+%Ã¤%
 
 <!#+z::send !#+%z%
 <!#+x::send !#+%x%
@@ -611,7 +613,7 @@ n::send %n%
 ^<!#+i::send ^!#+%i%
 ^<!#+o::send ^!#+%o%
 ^<!#+p::send ^!#+%p%
-^<!#+å::send ^!#+%å%
+^<!#+Ã¥::send ^!#+%Ã¥%
 
 ^<!#+s::send ^!#+%s%
 ^<!#+d::send ^!#+%d%
@@ -621,8 +623,8 @@ n::send %n%
 ^<!#+j::send ^!#+%j%
 ^<!#+k::send ^!#+%k%
 ^<!#+l::send ^!#+%l%
-^<!#+ö::send ^!#+%ö%
-^<!#+ä::send ^!#+%ä%
+^<!#+Ã¶::send ^!#+%Ã¶%
+^<!#+Ã¤::send ^!#+%Ã¤%
 
 ^<!#+z::send ^!#+%z%
 ^<!#+x::send ^!#+%x%
@@ -647,55 +649,60 @@ return
 	send, {Escape up}
 return
 
-^!q::send {{}
-^!w::send {}}
-^!e::send [
-^!r::send ]
-^!t::send $
+^!q::send $
+^!w::send {=}
+^!e::send (
+^!r::send )
+^!t::send "
 
-^!a::send `;
-^!s::send /
-^!d::send (
-^!f::send )
-^!g::send |
+^!a::send {+}
+^!s::send *
+^!d::send {{}
+^!f::send {}}
+^!g::send '
 
 ^!z::send :
-^!x::send {=}
-^!c::send @
-^!v::send {!}
-^!b::send \
+^!x::return
+^!c::send [
+^!v::send ]
+^!b::send |
 
-^!y::send "
-^!u::send ?
-^!i::send &
+^!y::return
+^!u::send /
+^!i::send \
 ^!o::send <
 ^!p::send >
 
-^!h::send {#}
+^!h::send @
+^!j::send {!}
+^!k::send ?
+^!l::send &
+^!SC029::send `%
 
-^!n::send `%
+^!n::send {#}
 
-+1::return
-+2::return
-+3::return
-+4::return
-+5::return
-+6::return
-+7::return
-+8::return
-+9::return
-+0::return
++1::send {!}
++2::send "
++3::send {#}
++4::send Â¤
++5::send `%
++6::send &
++7::send /
++8::send (
++9::send )
++0::send {=}
++SC00C::send ?
 
-^!2::return
-^!3::return
-^!4::return
-^!7::return
-^!8::return
-^!9::return
-^!0::return
-^!SC00C::return
+^!2::send @
+^!3::send Â£
+^!4::send $
+^!7::send {{}
+^!8::send [
+^!9::send ]
+^!0::send {}}
+^!SC00C::send \
 SC01A::send `,
-+SC01A::return
++SC01A::send `;
 
 #usehook off
 return
@@ -744,7 +751,7 @@ setctrl:
    hotkey, ^i, %scc%
    hotkey, ^o, %scc%
    hotkey, ^p, %scc%
-   hotkey, ^å, %scc%
+   hotkey, ^Ã¥, %scc%
 
    hotkey, ^s, %scc%
    hotkey, ^d, %scc%
@@ -754,8 +761,8 @@ setctrl:
    hotkey, ^j, %scc%
    hotkey, ^k, %scc%
    hotkey, ^l, %scc%
-   hotkey, ^ö, %scc%
-   hotkey, ^ä, %scc%
+   hotkey, ^Ã¶, %scc%
+   hotkey, ^Ã¤, %scc%
 
    hotkey, ^z, %scc%
    hotkey, ^x, %scc%
@@ -778,7 +785,7 @@ setctrl:
    hotkey, #i, %scc%
    hotkey, #o, %scc%
    hotkey, #p, %scc%
-   hotkey, #å, %scc%
+   hotkey, #Ã¥, %scc%
 
    hotkey, #s, %scc%
    hotkey, #d, %scc%
@@ -788,8 +795,8 @@ setctrl:
    hotkey, #j, %scc%
    hotkey, #k, %scc%
    hotkey, #l, %scc%
-   hotkey, #ö, %scc%
-   hotkey, #ä, %scc%
+   hotkey, #Ã¶, %scc%
+   hotkey, #Ã¤, %scc%
 
    hotkey, #z, %scc%
    hotkey, #x, %scc%
@@ -812,7 +819,7 @@ setctrl:
    hotkey, ^+i, %scc%
    hotkey, ^+o, %scc%
    hotkey, ^+p, %scc%
-   hotkey, ^+å, %scc%
+   hotkey, ^+Ã¥, %scc%
 
    hotkey, ^+s, %scc%
    hotkey, ^+d, %scc%
@@ -822,8 +829,8 @@ setctrl:
    hotkey, ^+j, %scc%
    hotkey, ^+k, %scc%
    hotkey, ^+l, %scc%
-   hotkey, ^+ö, %scc%
-   hotkey, ^+ä, %scc%
+   hotkey, ^+Ã¶, %scc%
+   hotkey, ^+Ã¤, %scc%
 
    hotkey, ^+z, %scc%
    hotkey, ^+x, %scc%
@@ -846,7 +853,7 @@ setctrl:
    hotkey, <!+i, %scc%
    hotkey, <!+o, %scc%
    hotkey, <!+p, %scc%
-   hotkey, <!+å, %scc%
+   hotkey, <!+Ã¥, %scc%
 
    hotkey, <!+s, %scc%
    hotkey, <!+d, %scc%
@@ -856,8 +863,8 @@ setctrl:
    hotkey, <!+j, %scc%
    hotkey, <!+k, %scc%
    hotkey, <!+l, %scc%
-   hotkey, <!+ö, %scc%
-   hotkey, <!+ä, %scc%
+   hotkey, <!+Ã¶, %scc%
+   hotkey, <!+Ã¤, %scc%
 
    hotkey, <!+z, %scc%
    hotkey, <!+x, %scc%
@@ -880,7 +887,7 @@ setctrl:
    hotkey, #+i, %scc%
    hotkey, #+o, %scc%
    hotkey, #+p, %scc%
-   hotkey, #+å, %scc%
+   hotkey, #+Ã¥, %scc%
 
    hotkey, #+s, %scc%
    hotkey, #+d, %scc%
@@ -890,8 +897,8 @@ setctrl:
    hotkey, #+j, %scc%
    hotkey, #+k, %scc%
    hotkey, #+l, %scc%
-   hotkey, #+ö, %scc%
-   hotkey, #+ä, %scc%
+   hotkey, #+Ã¶, %scc%
+   hotkey, #+Ã¤, %scc%
 
    hotkey, #+z, %scc%
    hotkey, #+x, %scc%
@@ -914,7 +921,7 @@ setctrl:
    hotkey, ^<!i, %scc%
    hotkey, ^<!o, %scc%
    hotkey, ^<!p, %scc%
-   hotkey, ^<!å, %scc%
+   hotkey, ^<!Ã¥, %scc%
 
    hotkey, ^<!s, %scc%
    hotkey, ^<!d, %scc%
@@ -924,8 +931,8 @@ setctrl:
    hotkey, ^<!j, %scc%
    hotkey, ^<!k, %scc%
    hotkey, ^<!l, %scc%
-   hotkey, ^<!ö, %scc%
-   hotkey, ^<!ä, %scc%
+   hotkey, ^<!Ã¶, %scc%
+   hotkey, ^<!Ã¤, %scc%
 
    hotkey, ^<!z, %scc%
    hotkey, ^<!x, %scc%
@@ -948,7 +955,7 @@ setctrl:
    hotkey, ^#i, %scc%
    hotkey, ^#o, %scc%
    hotkey, ^#p, %scc%
-   hotkey, ^#å, %scc%
+   hotkey, ^#Ã¥, %scc%
 
    hotkey, ^#s, %scc%
    hotkey, ^#d, %scc%
@@ -958,8 +965,8 @@ setctrl:
    hotkey, ^#j, %scc%
    hotkey, ^#k, %scc%
    hotkey, ^#l, %scc%
-   hotkey, ^#ö, %scc%
-   hotkey, ^#ä, %scc%
+   hotkey, ^#Ã¶, %scc%
+   hotkey, ^#Ã¤, %scc%
 
    hotkey, ^#z, %scc%
    hotkey, ^#x, %scc%
@@ -982,7 +989,7 @@ setctrl:
    hotkey, <!#i, %scc%
    hotkey, <!#o, %scc%
    hotkey, <!#p, %scc%
-   hotkey, <!#å, %scc%
+   hotkey, <!#Ã¥, %scc%
 
    hotkey, <!#s, %scc%
    hotkey, <!#d, %scc%
@@ -992,8 +999,8 @@ setctrl:
    hotkey, <!#j, %scc%
    hotkey, <!#k, %scc%
    hotkey, <!#l, %scc%
-   hotkey, <!#ö, %scc%
-   hotkey, <!#ä, %scc%
+   hotkey, <!#Ã¶, %scc%
+   hotkey, <!#Ã¤, %scc%
 
    hotkey, <!#z, %scc%
    hotkey, <!#x, %scc%
@@ -1016,7 +1023,7 @@ setctrl:
    hotkey, ^<!+i, %scc%
    hotkey, ^<!+o, %scc%
    hotkey, ^<!+p, %scc%
-   hotkey, ^<!+å, %scc%
+   hotkey, ^<!+Ã¥, %scc%
 
    hotkey, ^<!+s, %scc%
    hotkey, ^<!+d, %scc%
@@ -1026,8 +1033,8 @@ setctrl:
    hotkey, ^<!+j, %scc%
    hotkey, ^<!+k, %scc%
    hotkey, ^<!+l, %scc%
-   hotkey, ^<!+ö, %scc%
-   hotkey, ^<!+ä, %scc%
+   hotkey, ^<!+Ã¶, %scc%
+   hotkey, ^<!+Ã¤, %scc%
 
    hotkey, ^<!+z, %scc%
    hotkey, ^<!+x, %scc%
@@ -1050,7 +1057,7 @@ setctrl:
    hotkey, ^<!#i, %scc%
    hotkey, ^<!#o, %scc%
    hotkey, ^<!#p, %scc%
-   hotkey, ^<!#å, %scc%
+   hotkey, ^<!#Ã¥, %scc%
 
    hotkey, ^<!#s, %scc%
    hotkey, ^<!#d, %scc%
@@ -1060,8 +1067,8 @@ setctrl:
    hotkey, ^<!#j, %scc%
    hotkey, ^<!#k, %scc%
    hotkey, ^<!#l, %scc%
-   hotkey, ^<!#ö, %scc%
-   hotkey, ^<!#ä, %scc%
+   hotkey, ^<!#Ã¶, %scc%
+   hotkey, ^<!#Ã¤, %scc%
 
    hotkey, ^<!#z, %scc%
    hotkey, ^<!#x, %scc%
@@ -1084,7 +1091,7 @@ setctrl:
    hotkey, ^#+i, %scc%
    hotkey, ^#+o, %scc%
    hotkey, ^#+p, %scc%
-   hotkey, ^#+å, %scc%
+   hotkey, ^#+Ã¥, %scc%
 
    hotkey, ^#+s, %scc%
    hotkey, ^#+d, %scc%
@@ -1094,8 +1101,8 @@ setctrl:
    hotkey, ^#+j, %scc%
    hotkey, ^#+k, %scc%
    hotkey, ^#+l, %scc%
-   hotkey, ^#+ö, %scc%
-   hotkey, ^#+ä, %scc%
+   hotkey, ^#+Ã¶, %scc%
+   hotkey, ^#+Ã¤, %scc%
 
    hotkey, ^#+z, %scc%
    hotkey, ^#+x, %scc%
@@ -1118,7 +1125,7 @@ setctrl:
    hotkey, <!#+i, %scc%
    hotkey, <!#+o, %scc%
    hotkey, <!#+p, %scc%
-   hotkey, <!#+å, %scc%
+   hotkey, <!#+Ã¥, %scc%
 
    hotkey, <!#+s, %scc%
    hotkey, <!#+d, %scc%
@@ -1128,8 +1135,8 @@ setctrl:
    hotkey, <!#+j, %scc%
    hotkey, <!#+k, %scc%
    hotkey, <!#+l, %scc%
-   hotkey, <!#+ö, %scc%
-   hotkey, <!#+ä, %scc%
+   hotkey, <!#+Ã¶, %scc%
+   hotkey, <!#+Ã¤, %scc%
 
    hotkey, <!#+z, %scc%
    hotkey, <!#+x, %scc%
@@ -1152,7 +1159,7 @@ setctrl:
    hotkey, ^<!#+i, %scc%
    hotkey, ^<!#+o, %scc%
    hotkey, ^<!#+p, %scc%
-   hotkey, ^<!#+å, %scc%
+   hotkey, ^<!#+Ã¥, %scc%
 
    hotkey, ^<!#+s, %scc%
    hotkey, ^<!#+d, %scc%
@@ -1162,8 +1169,8 @@ setctrl:
    hotkey, ^<!#+j, %scc%
    hotkey, ^<!#+k, %scc%
    hotkey, ^<!#+l, %scc%
-   hotkey, ^<!#+ö, %scc%
-   hotkey, ^<!#+ä, %scc%
+   hotkey, ^<!#+Ã¶, %scc%
+   hotkey, ^<!#+Ã¤, %scc%
 
    hotkey, ^<!#+z, %scc%
    hotkey, ^<!#+x, %scc%
@@ -1178,7 +1185,7 @@ setctrl:
 return
 
 help:
-   msgbox, 64, %name%, Svorak utan administratörsrättigheter.   `n`n%name% ersätter den vanliga svenska   `ntangentbordslayouten med alternativet Svorak,   `nså som det beskrivs på http://aoeu.info/.   `n`nNär processen är aktiverad fångas alla tangent- `ntryckningar och en översättning skickas vidare,  `nvilket sker helt transparent för användaren.   `nIngenting installeras.   `n`nTeckenöversättingen kan lätt inaktiveras via en   `nikon i Aktivitetsfältet. Där finns även ett val som  `nsom avgör om ctrl-tecken ska översättas.   `n`n`nSimon Griph, 2004-10-25   `n
+   msgbox, 64, %name%, Svorak utan administratÃ¶rsrÃ¤ttigheter.   `n`n%name% ersÃ¤tter den vanliga svenska   `ntangentbordslayouten med alternativet Svorak,   `nsÃ¥ som det beskrivs pÃ¥ http://aoeu.info/.   `n`nNÃ¤r processen Ã¤r aktiverad fÃ¥ngas alla tangent- `ntryckningar och en Ã¶versÃ¤ttning skickas vidare,  `nvilket sker helt transparent fÃ¶r anvÃ¤ndaren.   `nIngenting installeras.   `n`nTeckenÃ¶versÃ¤ttingen kan lÃ¤tt inaktiveras via en   `nikon i AktivitetsfÃ¤ltet. DÃ¤r finns Ã¤ven ett val som  `nsom avgÃ¶r om ctrl-tecken ska Ã¶versÃ¤ttas.   `n`n`nSimon Griph, 2004-10-25  `nExtra mod by Zaz, 2012 `n
 return
 
 aoeu:
