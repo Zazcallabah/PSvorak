@@ -615,8 +615,8 @@ n::send %n%
 ^!f::send {}}
 ^!g::send '
 
-^!z::send :
-^!x::return
+^!z::send <
+^!x::send >
 ^!c::send [
 ^!v::send ]
 ^!b::send |
@@ -631,7 +631,8 @@ n::send %n%
 ^!j::send {!}
 ^!k::send ?
 ^!l::send &
-^!SC029::send `%
+^!ö::send `%
+^!ä::send {#}
 
 ^!n::send {#}
 
