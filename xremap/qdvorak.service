@@ -1,0 +1,13 @@
+[Unit]
+Description=qdvorak ctrl remap
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=zaz
+ExecStart=/home/zaz/.cargo/bin/xremap /etc/xremap/config.yml
+
+[Install]
+WantedBy=default.target

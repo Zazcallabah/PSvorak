@@ -1,0 +1,48 @@
+# physical text on key -> key_name
+# , -> comma
+# . -> dot
+# - -> slash
+# ö -> semicolon
+# ä -> apostrophe
+# å -> leftbrace
+# ~ -> rightbrace
+# * -> backslash
+
+keymap:
+  - name: Dvorak-Qwerty
+    remap:
+      CTRL-KEY_Q: C-x
+      CTRL-KEY_W: C-comma
+      CTRL-KEY_E: C-d
+      CTRL-KEY_R: C-o
+      CTRL-KEY_T: C-k
+
+      CTRL-KEY_Y: C-t
+      CTRL-KEY_U: C-f
+      CTRL-KEY_I: C-g
+      CTRL-KEY_O: C-s
+      CTRL-KEY_P: C-r
+      CTRL-KEY_LEFTBRACE: C-w
+      # CTRL-KEY_RIGHTBRACE: C-rightbrace
+      # CTRL-KEY_A: C-a
+      CTRL-KEY_S: C-semicolon
+      CTRL-KEY_D: C-h
+      CTRL-KEY_F: C-y
+      CTRL-KEY_G: C-u
+      CTRL-KEY_H: C-j
+      CTRL-KEY_J: C-c
+      CTRL-KEY_K: C-v
+      CTRL-KEY_L: C-p
+      CTRL-KEY_SEMICOLON: C-q
+      CTRL-KEY_APOSTROPHE: C-e
+      #CTRL-KEY_BACKSLASH: C-backslash
+      CTRL-KEY_Z: C-slash
+      CTRL-KEY_X: C-b
+      CTRL-KEY_C: C-i
+      CTRL-KEY_V: C-dot
+      CTRL-KEY_B: C-n
+      CTRL-KEY_N: C-l
+      #CTRL-KEY_M: C-m
+      CTRL-KEY_COMMA: C-leftbrace
+      CTRL-KEY_DOT: C-z
+      CTRL-KEY_SLASH: C-apostrophe
